@@ -276,19 +276,17 @@ D4.forEach(function(page) {
 var NURSERY_IMAGE_BASE =
 "https://raw.githubusercontent.com/mdaquibraza/colour-guide/main/images/nursery/";
 
-D5.forEach(function(page, index) {
+D5.forEach(function(page) {
 
     page.v.forEach(function(style) {
 
-        var fileName = style.i.split("/").pop();
-
-        fileName = fileName.replace(/^n_/, "");
-
-        style.i = NURSERY_IMAGE_BASE + fileName;
+        style.i = NURSERY_IMAGE_BASE +
+            style.i.replace(/^n_/, "");
 
     });
 
-    page.th = page.v[0].i;
+    page.th = NURSERY_IMAGE_BASE +
+        page.th.replace(/^n_/, "");
 
 });
     var VOLS=[{n:"Vol. 1",title:"My Colouring Adventure",sub:"11 pages, 3 colour styles each",buy:"https://amzn.in/d/0eyG6A8Y",d:D1},{n:"Vol. 2",title:"My Colouring Adventure",sub:"11 pages, 3 colour styles each",buy:"https://amzn.in/d/08fBvhIO",d:D2},{n:"Vol. 3",title:"My Colouring Adventure",sub:"11 pages, 3 colour styles each",buy:"https://amzn.in/d/0d1sXr6g",d:D3},{n:"Vol. 4",title:"Princess Queen",sub:"11 pages, 3 colour styles each",buy:"https://amzn.in/d/0gq3ALmU",d:D4},{n:"Nursery",sub:"52 pages, 1 colour picture each",buy:"https://amzn.in/d/0eJaPGW1",d:D5}];
