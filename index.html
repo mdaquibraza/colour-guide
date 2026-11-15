@@ -210,19 +210,18 @@ var D1=[
 {"n":"Purple Gown","c":["#8e44ad","#f7b6d9","#ffd23f","#c8661a"],"i":"images/vol1/p11_3.webp"}]}
 ];
 
-
 /* VOLUME 1 IMAGE PATH FIX */
 var VOL1_IMAGE_BASE =
 "https://raw.githubusercontent.com/mdaquibraza/colour-guide/main/images/vol1/";
 
 D1.forEach(function(page) {
     page.v.forEach(function(style) {
-        style.i = VOL1_IMAGE_BASE +
-            style.i.replace(/^v1_/, "");
+        style.i = VOL1_IMAGE_BASE + style.i.split("/").pop();
     });
 
     page.th = page.v[0].i;
 });
+
 var D2=[{"t": "Climbing Panda Cub", "th": "v2_t01.webp", "v": [{"n": "Black and White Panda", "c": ["#222222", "#ffffff", "#87ceeb", "#3fae3f"], "i": "v2_p01_1.webp"}, {"n": "Brown Panda", "c": ["#7a4a22", "#fbf1d6", "#fff59d", "#3fae3f"], "i": "v2_p01_2.webp"}, {"n": "Grey Panda", "c": ["#6b7078", "#ffffff", "#f8bbd0", "#3fae3f"], "i": "v2_p01_3.webp"}]}, {"t": "Cloud Dreamer Dragon", "th": "v2_t02.webp", "v": [{"n": "Blue Dragon", "c": ["#4da3ff", "#ffd23f", "#bfe6f7", "#f48fb1"], "i": "v2_p02_1.webp"}, {"n": "Green Dragon", "c": ["#7cc43f", "#ffd23f", "#d9f2c0", "#f48fb1"], "i": "v2_p02_2.webp"}, {"n": "Purple Dragon", "c": ["#a77be0", "#ffd23f", "#f1c9f5", "#f48fb1"], "i": "v2_p02_3.webp"}]}, {"t": "Moss Jump Fun", "th": "v2_t03.webp", "v": [{"n": "Orange Rabbit", "c": ["#f7931e", "#ffffff", "#f48fb1", "#87ceeb"], "i": "v2_p03_1.webp"}, {"n": "White Rabbit", "c": ["#ffffff", "#f48fb1", "#87ceeb", "#3fae3f"], "i": "v2_p03_2.webp"}, {"n": "Grey Rabbit", "c": ["#9aa0a6", "#ffffff", "#f48fb1", "#87ceeb"], "i": "v2_p03_3.webp"}]}, {"t": "Treasure Hunt", "th": "v2_t04.webp", "v": [{"n": "Khaki Explorer", "c": ["#c9a66b", "#4b7a2a", "#8b5a2b", "#e53935"], "i": "v2_p04_1.webp"}, {"n": "Blue Explorer", "c": ["#2f6fe0", "#d9b982", "#e53935", "#1e1e1e"], "i": "v2_p04_2.webp"}, {"n": "Yellow Explorer", "c": ["#ffd23f", "#2f6fe0", "#e53935", "#3fae3f"], "i": "v2_p04_3.webp"}]}, {"t": "Little Wizard Boy", "th": "v2_t05.webp", "v": [{"n": "Blue Wizard", "c": ["#1f3f9f", "#ffd23f", "#8b4a2b", "#cfe0ff"], "i": "v2_p05_1.webp"}, {"n": "Green Wizard", "c": ["#2e7d32", "#ffd23f", "#1e1e1e", "#fbf1d6"], "i": "v2_p05_2.webp"}, {"n": "Purple Wizard", "c": ["#6a2c91", "#ffd23f", "#1f2a6b", "#d8c9f5"], "i": "v2_p05_3.webp"}]}, {"t": "Party Time Elephant", "th": "v2_t06.webp", "v": [{"n": "Blue Elephant", "c": ["#5b9bd5", "#ffd23f", "#f48fb1", "#ffffff"], "i": "v2_p06_1.webp"}, {"n": "Green Elephant", "c": ["#8bc34a", "#ffd23f", "#f48fb1", "#ffffff"], "i": "v2_p06_2.webp"}, {"n": "Purple Elephant", "c": ["#b388dd", "#ffd23f", "#f48fb1", "#ffffff"], "i": "v2_p06_3.webp"}]}, {"t": "Sleepy Bear Cub", "th": "v2_t07.webp", "v": [{"n": "Brown Bear", "c": ["#8b4a1a", "#3f7fe0", "#ffd23f", "#87ceeb"], "i": "v2_p07_1.webp"}, {"n": "White Bear", "c": ["#ffffff", "#f06aa8", "#ffd23f", "#87ceeb"], "i": "v2_p07_2.webp"}, {"n": "Grey Bear", "c": ["#6b7078", "#3fb34f", "#ffd23f", "#87ceeb"], "i": "v2_p07_3.webp"}]}, {"t": "Tall Friend Giraffe", "th": "v2_t08.webp", "v": [{"n": "Sunny Giraffe", "c": ["#ffd23f", "#e67e22", "#87ceeb", "#3fae3f"], "i": "v2_p08_1.webp"}, {"n": "Brown Spots Giraffe", "c": ["#f2d38b", "#8b5a2b", "#fff3b0", "#3fae3f"], "i": "v2_p08_2.webp"}, {"n": "Orange Spots Giraffe", "c": ["#ffc04d", "#e67e22", "#f8bbd0", "#3fae3f"], "i": "v2_p08_3.webp"}]}, {"t": "Milk Time Tiger", "th": "v2_t09.webp", "v": [{"n": "Orange Tiger", "c": ["#f7931e", "#fbf1d6", "#87ceeb", "#3fae3f"], "i": "v2_p09_1.webp"}, {"n": "White Tiger", "c": ["#ffffff", "#f48fb1", "#87ceeb", "#3fae3f"], "i": "v2_p09_2.webp"}, {"n": "Yellow Tiger", "c": ["#ffd23f", "#fbf1d6", "#87ceeb", "#3fae3f"], "i": "v2_p09_3.webp"}]}, {"t": "Yummy Banana Time", "th": "v2_t10.webp", "v": [{"n": "Brown Monkey", "c": ["#8b4a1a", "#ffd23f", "#87ceeb", "#3fae3f"], "i": "v2_p10_1.webp"}, {"n": "Grey Monkey", "c": ["#6b7078", "#ffd23f", "#fff59d", "#3fae3f"], "i": "v2_p10_2.webp"}, {"n": "Orange Monkey", "c": ["#d2691e", "#ffd23f", "#f8bbd0", "#3fae3f"], "i": "v2_p10_3.webp"}]}, {"t": "Magic King", "th": "v2_t11.webp", "v": [{"n": "Golden Lion", "c": ["#f7b500", "#d35400", "#e53935", "#ffd23f"], "i": "v2_p11_1.webp"}, {"n": "Brown Mane Lion", "c": ["#f5deb3", "#6b3a1f", "#2f6fe0", "#ffd23f"], "i": "v2_p11_2.webp"}, {"n": "Grey Lion", "c": ["#aab4c8", "#4f5d7a", "#8e44ad", "#ffd23f"], "i": "v2_p11_3.webp"}]}];
 /* VOLUME 2 IMAGE PATH FIX */
 var VOL2_IMAGE_BASE =
